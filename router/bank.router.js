@@ -5,7 +5,7 @@ const bankRoute = require("../controller/bank.controller")
 
 router.post('/user', bankRoute.createBankProfile)
 router.get('/userbankdetails', bankMiddleware.userExist, bankRoute.userBankDetails)
-router.get('/bankdetaiils', bankRoute.accountBankDetails)
+router.get('/bankdetails', bankRoute.accountBankDetails)
 
 
 module.exports = router;
