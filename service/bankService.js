@@ -5,11 +5,14 @@ const bankService = {
         return await Bank.create(user)
     },
 
-    retrieveUserDetails: async(accountNumber) => {
-        return Bank.find({ accountName })
+    userBankDetails: async(accNumber) => {
+        return Bank.find({ accountNumber: accNumber })
     },
 
-    retrieveAllAccountDetails: async() => {
+    accountBankDetails: async() => {
         return Bank.find()
     }
 }
+
+
+module.exports = bankService
