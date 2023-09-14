@@ -1,0 +1,29 @@
+{
+    "name": "bankingoperation",
+    "version": "1.0.0",
+    "description": "A very basic bank operation",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Akintola-Stephen/bankingoperation.git"
+    },
+    "keywords": [
+        "bank"
+    ],
+    "author": "Stephen",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Akintola-Stephen/bankingoperation/issues"
+    },
+    "homepage": "https://github.com/Akintola-Stephen/bankingoperation#readme",
+
+    "dependencies": {
+        "express": "^4.18.2",
+        "nanoid": "^5.0.1",
+        "nodemon": "^3.0.1"
+    }
+}
