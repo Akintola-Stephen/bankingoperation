@@ -8,6 +8,7 @@ const bankObj = {
     createBankProfile: async(req, res) => {
         try {
             const userObj = req.body;
+            // Calling bank service create function to create users
             const user = await bankService.createUser(userObj)
             return res.status(200).json(user);
 
