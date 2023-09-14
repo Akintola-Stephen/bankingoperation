@@ -11,8 +11,8 @@ const bankObj = {
     createBankProfile: async(req, res) => {
         try {
             const userObj = req.body;
+            // Calling account number generation function written in util folder
             req.body.accountNumber = functionDispatcher.generateAccountNumber()
-                // console.log(req.body.accountNumber)
                 // Calling bank service create function to create users
             const user = await bankService.createUser(userObj)
             return res.status(200).json(user);
