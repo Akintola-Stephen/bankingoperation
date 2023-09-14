@@ -17,12 +17,21 @@ const BankSchema = new Schema({
         type: Number,
         default: 0.0
     },
+    accountNumber: {
+        type: String,
+        required: true
+    },
+    accountType: {
+        type: String,
+        enum: ['Savings', 'Checking', 'Current'],
+        required: true
+    },
     createdAt: {
         type: Date,
         default: Date.now,
     },
 });
 
-const bankModel = model("test", BankSchema)
+const bankModel = model("bank", BankSchema)
 
 module.exports = bankModel
