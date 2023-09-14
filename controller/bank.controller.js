@@ -18,11 +18,25 @@ const bankObj = {
     },
 
     retrieveUserDetails: async(req, res) => {
-        const accountNumber = req.accountNumber;
-        await bankService.retrieveDetails(accountNumber)
+        try {
+            const accountNumber = req.body.accountNumber;
+            const user = await bankService.retrieveDetails(accountNumber)
+            return res.status(200).json(user)
+        } catch (err) {
+            return res.status(500).json({ msg: err })
+        }
+
     },
     retrieveAllAccountDetails: async(req, res) => {
-
+        try {
+            const users = await bankService.retrieveAllAccountDetails()
+            return res.status(200).json({
+                data: users,
+                status: 'success'
+            })
+        } catch (err) {
+            return res.status(500).json({ msg: err, status: 'failure' })
+        }
     }
 }
 
