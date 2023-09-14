@@ -6,8 +6,14 @@ const bankService = require("../service/bankService")
 // And a function to retrieve all banks
 const bankObj = {
     createBankProfile: async(req, res) => {
-        const { userObj } = req.body;
-        await bankService.createUser(userObj)
+        try {
+            const userObj = req.body;
+            const user = await bankService.createUser(userObj)
+            return res.status(200).json(user);
+
+        } catch (err) {
+            return res.status(500).json({ msg: err })
+        }
     },
 
     retrieveUserDetails: async(req, res) => {
