@@ -24,8 +24,10 @@ const bankObj = {
 
     retrieveUserDetails: async(req, res) => {
         try {
-            const accountNumber = req.body.accountNumber;
-            const user = await bankService.retrieveDetails(accountNumber)
+            const {
+                accountNumber
+            } = req.body;
+            const user = await bankService.userBankDetails(accountNumber)
             return res.status(200).json(user)
         } catch (err) {
             return res.status(500).json({ msg: err })
@@ -34,7 +36,7 @@ const bankObj = {
     },
     retrieveAllAccountDetails: async(req, res) => {
         try {
-            const users = await bankService.retrieveAllAccountDetails()
+            const users = await bankService.accountBankDetails()
             return res.status(200).json({
                 data: users,
                 status: 'success'
