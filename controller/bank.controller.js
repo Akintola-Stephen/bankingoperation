@@ -1,14 +1,19 @@
 const express = require("express")
 const bankService = require("../service/bankService")
+const functionDispatcher = require("../util/functionDispatcher")
 
-// An object that wraps in three functions
-// A function for creating a user, another function to retirve a persons details
-// And a function to retrieve all banks
+/**
+An object that wraps in three functions
+     A function for creating a user, another function to retirve a persons details
+     And a function to retrieve all banks
+**/
 const bankObj = {
     createBankProfile: async(req, res) => {
         try {
             const userObj = req.body;
-            // Calling bank service create function to create users
+            req.body.accountNumber = functionDispatcher.generateAccountNumber()
+                // console.log(req.body.accountNumber)
+                // Calling bank service create function to create users
             const user = await bankService.createUser(userObj)
             return res.status(200).json(user);
 
