@@ -6,7 +6,7 @@ const middlewareObj = {
         const { accountNumber } = req.body;
         const user = await Bank.findOne({ accountNumber })
         if (!user) {
-            return res.status(409).json({ msg: `No user with account numner ${accountNumber} found` })
+            return res.status(409).json({ msg: `No user with account number ${accountNumber} found` })
         }
         next()
     }
