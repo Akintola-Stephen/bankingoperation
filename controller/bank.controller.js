@@ -22,7 +22,7 @@ const bankObj = {
         }
     },
 
-    retrieveUserDetails: async(req, res) => {
+    userBankDetails: async(req, res) => {
         try {
             const {
                 accountNumber
@@ -34,7 +34,7 @@ const bankObj = {
         }
 
     },
-    retrieveAllAccountDetails: async(req, res) => {
+    accountBankDetails: async(req, res) => {
         try {
             const users = await bankService.accountBankDetails()
             return res.status(200).json({
