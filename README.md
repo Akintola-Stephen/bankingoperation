@@ -3,7 +3,7 @@
 A simple banking operation
 
 ```
-BANKING OPERATION - is a simple app that allows user created an account based on some given account types (Savings, Current,..), retrieve information on his account based on a generated account number and also view olist of all created account
+BANKING OPERATION - is a simple app that allows user creates an account based on some given account types (Savings, Current,..), retrieve information on his account based on a generated account number and also view olist of all created account
 ```
 
 ## Code structure explanation
@@ -23,10 +23,10 @@ This project work contains the follwing folders.
 
 | Routes               | HTTP Methods | Description                    |
 | :------------------- | :----------- | :----------------------------- |
-| /api/user/register   | POST         | User registration route        |
-| /api/userbankdetails | GET          | Extract a user account details |
-| /api/bankdetails/    | GET          | Get all user account details   |
-|                      |
+| localhost:5000/api/user/register   | POST         | User registration route        |
+| localhost:5000/api/userbankdetails | GET          | Extract a user account details |
+| localhost:5000/api/bankdetails/    | GET          | Get all user account details   |
+
 
 ```
 Project is created with:
@@ -38,7 +38,7 @@ Project is created with:
 <img src="https://img.shields.io/badge/-Nodejs%20-%23323330?style=for-the-badge&logo=Node.js&logoColor=green">
 </p>
 
--
+
 - Node
 - Express
 - Mongoose
