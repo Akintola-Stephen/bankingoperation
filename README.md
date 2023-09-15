@@ -35,8 +35,8 @@ This project work contains the follwing folders.
 
 | Routes               | HTTP Methods | Description                    |
 | :------------------- | :----------- | :----------------------------- |
-
 | https://www.postman.com/sakintola351/workspace/flutterwave/documentation/16998467-528b10c4-1608-4701-a3b0-9d7bea00e95a | POST, GET | POSTMAN 
+
 
 
 
