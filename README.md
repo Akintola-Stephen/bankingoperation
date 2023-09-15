@@ -19,16 +19,6 @@ This project work contains the follwing folders.
 - model: bank model
 - util: functionDispatcher
 
-#### Routes ⚡
-
-| Routes               | HTTP Methods | Description                    |
-| :------------------- | :----------- | :----------------------------- |
-| https://fbo-v7fg.onrender.com/api/user/register   | POST         | User registration route        |
-| https://fbo-v7fg.onrender.com/api/userbankdetails | GET          | Extract a user account details |
-| https://fbo-v7fg.onrender.com/api/bankdetails/    | GET          | Get all user account details   |
-
-
-
 
 
 #### Postman Docs ⚡
@@ -38,6 +28,14 @@ This project work contains the follwing folders.
 | https://www.postman.com/sakintola351/workspace/flutterwave/documentation/16998467-528b10c4-1608-4701-a3b0-9d7bea00e95a | POST, GET | POSTMAN 
 
 
+
+#### Routes ⚡
+
+| Routes               | HTTP Methods | Description                    |
+| :------------------- | :----------- | :----------------------------- |
+| https://fbo-v7fg.onrender.com/api/user/register   | POST         | User registration route        |
+| https://fbo-v7fg.onrender.com/api/userbankdetails | GET          | Extract a user account details |
+| https://fbo-v7fg.onrender.com/api/bankdetails/    | GET          | Get all user account details   |
 
 
 
