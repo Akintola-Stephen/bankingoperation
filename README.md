@@ -12,12 +12,12 @@ This project work contains the follwing folders.
 
 - config: A folder that contains a db file that contains functions used to establish connection to our mongoDB database
 - middleware: user notFound handler
-- model: Bank models
-- service: bank route
-- middleware: validation route
-- controller: bank controller
-- model: bank model
-- util: functionDispatcher
+- model: Bank Models
+- service: Bank Service
+- middleware: Validation Route
+- controller: Bank Controller
+- model: Bank Model
+- util: Function Dispatcher
 
 
 
