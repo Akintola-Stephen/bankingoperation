@@ -23,9 +23,9 @@ This project work contains the follwing folders.
 
 | Routes               | HTTP Methods | Description                    |
 | :------------------- | :----------- | :----------------------------- |
-| localhost:5000/api/user/register   | POST         | User registration route        |
-| localhost:5000/api/userbankdetails | GET          | Extract a user account details |
-| localhost:5000/api/bankdetails/    | GET          | Get all user account details   |
+| https://fbo-v7fg.onrender.com/api/user/register   | POST         | User registration route        |
+| https://fbo-v7fg.onrender.com/api/userbankdetails | GET          | Extract a user account details |
+| https://fbo-v7fg.onrender.com/api/bankdetails/    | GET          | Get all user account details   |
 
 
 ```
